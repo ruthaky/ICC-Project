@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import image1 from '../../Images/image1.jpeg';
-import image2 from '../../Images/image2.jpeg';
-import image3 from '../../Images/image3.jpg';
+import image1 from '../../Images/img1.jpg';
+import image2 from '../../Images/img2.jpg';
+import image3 from '../../Images/img3.jpeg';
 
 
 const Poster = () => {
@@ -25,7 +25,7 @@ const Poster = () => {
             className="d-block w-100"
             src={image1}
             alt="First slide"
-            style={{ height: '600px', objectFit: 'cover', objectPosition: 'top' }}
+            style={{ height: '600px', objectFit: 'cover', objectPosition: 'center' }}
           />
           <div style={overlayStyle} />
            
@@ -44,7 +44,7 @@ const Poster = () => {
             className="d-block w-100"
             src={image2}
             alt="Second slide"
-            style={{ height: '600px', objectFit: 'cover', objectPosition: 'top' }}
+            style={{ height: '600px', objectFit: 'cover', objectPosition: 'center' }}
           />
           <div style={overlayStyle} />
           <Carousel.Caption style={{ zIndex: 2 }}>
@@ -61,7 +61,7 @@ const Poster = () => {
             className="d-block w-100"
             src={image3}  
             alt="Third slide"
-            style={{ height: '600px', objectFit: 'cover', objectPosition: 'top' }}
+            style={{ height: '600px', objectFit: 'cover', objectPosition: 'center' }}
           />
           <div style={overlayStyle} />
           <Carousel.Caption style={{ zIndex: 2 }}>

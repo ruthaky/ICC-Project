@@ -85,7 +85,7 @@ const FindFlat = () => {
           <Form onSubmit={handleSubmit}>
             <Row className="align-items-center mb-3">
               {/* Dropdown for selecting BHK */}
-              <Col md={2}>
+              {/* <Col md={2}>
                 <DropdownButton title={`BHK: ${bedroom ? bedroom + ' BHK' : 'Select'}`} variant="success" id="dropdown-basic" className="w-100">
                   <div className="p-3">
                     <label>Select Bedroom Number:</label>
@@ -145,10 +145,10 @@ const FindFlat = () => {
                     />
                   </div>
                 </DropdownButton>
-              </Col>
+              </Col> */}
 
               {/* Dropdown for selecting property type */}
-              <Col md={3}>
+              {/* <Col md={3}>
                 <DropdownButton title={`Looking For: ${property || 'Select'}`} variant="success" id="dropdown-basic" className="w-100">
                   <div className="p-3">
                     <label>Select Property Type:</label>
@@ -190,10 +190,11 @@ const FindFlat = () => {
                     />
                   </div>
                 </DropdownButton>
-              </Col>
+              </Col> */}
             </Row>
 
             {/* Input Field for location */}
+          <h4 className='mb-3' style={{color: "#000"}}>Please type the location you're looking for :</h4>  
             <Row className="mb-3">
               <Col md={10}>
                 <input

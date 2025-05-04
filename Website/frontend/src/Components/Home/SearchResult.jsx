@@ -29,7 +29,7 @@ const wishlistHandler = (flat) => {
             null
           ) : (
             <div style={{ padding: '20px' }}>
-              <h4 style={{ marginBottom: '20px' }}>Search Result for {data.result[0].location} :</h4>
+              <h4 style={{ marginBottom: '20px', color: "#000", }}>Search Result for {data.result[0].location} :</h4>
               <Row>
                 {data.result.map((flat) => (
                   <Col md={12} key={flat._id} style={{ marginBottom: '20px' }}>
@@ -66,7 +66,7 @@ const wishlistHandler = (flat) => {
                                 <Card.Title style={{ marginBottom: '5px' }}>
                                   {flat.SOCIETY_NAME}, {flat.CITY}
                                 </Card.Title>
-                                <Card.Subtitle style={{ marginBottom: '10px', color: '#aaa' }}>
+                                <Card.Subtitle style={{ marginBottom: '10px', color: '#222' }}>
                                   {flat.BEDROOM_NUM} BHK {flat.PROPERTY_TYPE} in {flat.location}
                                 </Card.Subtitle>
                               </div>
