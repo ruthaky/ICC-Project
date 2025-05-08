@@ -90,7 +90,9 @@ const AllFlats = () => {
           <Col md={9}>
             {!data || !Array.isArray(data) || data.length === 0 ? null : (
               <div style={{ padding: "20px" }}>
-                <h4 style={{ marginBottom: "20px", color: "#000" ,}}>Featured Properties :</h4>
+                <h4 style={{ marginBottom: "20px", color: "#000" }}>
+                  Featured Properties :
+                </h4>
                 <Row>
                   {data.map((flat) => (
                     <Col
@@ -162,13 +164,13 @@ const AllFlats = () => {
                                     color: "#e0e0e0",
                                   }}
                                 >
-                                  ₹
+                                  ETB
                                   {flat.PRICE > 1
-                                    ? `${flat.PRICE.toFixed(2)} Cr`
+                                    ? `${flat.PRICE.toFixed(2)} `
                                     : `${(flat.PRICE * 100).toFixed(2)} Lakh`}
                                 </h5>
                                 <span style={{ color: "#aaa" }}>
-                                  {flat.AREA} sqft | ₹{flat.Price_per_sqft} /
+                                  {flat.AREA} sqft | ETB {flat.Price_per_sqft} /
                                   sqft
                                 </span>
                               </div>
