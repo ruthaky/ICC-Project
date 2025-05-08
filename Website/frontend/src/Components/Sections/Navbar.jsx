@@ -41,7 +41,7 @@ function NavBar() {
             {[
               { to: "/", icon: "fa-home", text: "Home" },
               { to: "/predict", icon: "fa-cloud", text: "Predict" },
-              { to: "/analysis", icon: "fa-chart-simple", text: "Analysis" },
+           
               { to: "/wishlist", icon: "fa-heart", text: "Wishlists" },
             ].map((item) => (
               <LinkContainer key={item.to} to={item.to}>
