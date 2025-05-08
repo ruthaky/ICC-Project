@@ -175,15 +175,7 @@ const Predict = () => {
           <h1 className="text-center mt-4" style={{ fontWeight: 600 }}>
             Welcome Back Chief!
           </h1>
-          <p className="text-center mb-4">
-            (
-            <span style={{ color: "red" }}>
-              {" "}
-              <strong>MERN Stack, Django</strong>{" "}
-            </span>{" "}
-            based kolkata flat price prediction app. Fill the form to get
-            approximate price range)
-          </p>
+        
         </Row>
 
         <Row>

@@ -64,11 +64,11 @@ const LocationAnalysis = () => {
   };
 
   return (
-    <Container className="mt-5">
-      <h3 style={{ color: "#00ff00" }}>Map Box:</h3>
+    <Container className="mt-5" style={{ color: "#000" }}>
+      <h3 style={{ color: "#000" }}>Map Box:</h3>
       <Row className="mt-2">
-        <Col md={3} className=" d-flex flex-column justify-content-center">
-          <h4>Select Category:</h4>
+        <Col md={3} className="d-flex flex-column justify-content-center">
+          <h4 style={{ color: "#333" }}>Select Category:</h4>
           <Form>
             {categoryOptions.map((option) => (
               <Form.Check
@@ -79,6 +79,7 @@ const LocationAnalysis = () => {
                 checked={selectedCategory === option}
                 onChange={() => setSelectedCategory(option)}
                 className="mb-2"
+                style={{ color: "#333" }}
               />
             ))}
           </Form>
@@ -92,7 +93,7 @@ const LocationAnalysis = () => {
             <Plot
               data={[
                 {
-                  type: "scattermap",
+                  type: "scattermapbox",
                   lat: filteredData.map((item) => item.LATITUDE),
                   lon: filteredData.map((item) => item.LONGITUDE),
                   mode: "markers",
@@ -103,7 +104,7 @@ const LocationAnalysis = () => {
                     colorbar: {
                       title: {
                         text: categoryLabels[selectedCategory],
-                        font: { color: "#ffffff" },
+                        font: { color: "#000" },
                       },
                     },
                   },
@@ -114,20 +115,21 @@ const LocationAnalysis = () => {
               ]}
               layout={{
                 autosize: true,
-                map: {
+                mapbox: {
                   style: "open-street-map",
                   zoom: 10,
                   center: { lat: 22.5726, lon: 88.3639 },
                 },
                 title: {
                   text: "Property Analysis in Kolkata",
-                  font: { color: "#ffffff" },
+                  font: { color: "#000" },
                 },
-                font: { color: "#ffffff" },
-                paper_bgcolor: "#0e1117",
-                plot_bgcolor: "#0e1117",
+                font: { color: "#000" },
+                paper_bgcolor: "#fff",
+                plot_bgcolor: "#fff",
               }}
               style={{ width: "100%", height: "100vh" }}
+              config={{ responsive: true }}
             />
           </div>
         </Col>
